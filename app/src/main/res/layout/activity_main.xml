@@ -9,7 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:useDefaultMargins="true"
     android:columnCount="2"
-    android:elevation="@dimen/elevation"
     tools:context="com.lucas.tipcalculator.MainActivity">
 
     <EditText
@@ -19,22 +18,20 @@
         android:inputType="number"
         android:digits="0123456789"
         android:maxLength="6"
-
         android:layout_column="0"
         android:layout_columnSpan="2" />
 
     <TextView
+        android:id="@+id/amountTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="0"
         android:layout_column="0"
+        android:background="#bbdefb"
         android:layout_columnSpan="2"
         android:singleLine="false"
         android:hint="@string/enter_amount"
         android:layout_gravity="fill_horizontal"
-        android:allowUndo="true"
-        android:elevation="@dimen/elevation"
-        android:background="#bbdefb"
         android:padding="@dimen/padding_text_view"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -63,7 +60,6 @@
 
     <TextView
         android:id="@+id/tipTextView"
-        android:elevation="@dimen/elevation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="fill_horizontal"
@@ -82,7 +78,6 @@
         android:id="@+id/totalTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="@dimen/elevation"
         android:layout_gravity="fill_horizontal"
         android:padding="@dimen/padding_text_view"
         android:background="@color/result_background"
